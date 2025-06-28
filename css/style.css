@@ -145,22 +145,21 @@ button:active {
 .flex-center {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin-top: 1.5rem;
+  gap: 16px;
 }
 
 .hangman-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
 }
 
 .hangman-drawing {
   position: relative;
   width: 200px;
-  height: 250px;
-  margin-bottom: 1.5rem;
+  height: 200px;
+  margin-bottom: 24px;
 }
 
 .hangman-part {
@@ -174,20 +173,20 @@ button:active {
   position: absolute;
 
   height: 10px;
-  width: 150px;
+  width: 100px;
   background-color: var(--dark);
   top: 0;
-  left: 50px;
+  left: calc(100% - 90%);
 }
 
 .pole {
   position: absolute;
 
-  height: 250px;
+  height: 200px;
   width: 10px;
   background-color: var(--dark);
   top: 0;
-  left: 50px;
+  left: calc(100% - 90%);
 }
 
 .beam {
@@ -199,59 +198,59 @@ button:active {
 }
 
 .rope {
-  height: 30px;
-  width: 5px;
+  height: 25px;
+  width: 6px;
   background-color: var(--dark);
-  top: 30px;
-  left: 145px;
+  top: 20px;
+  left: calc(100% - 44%);
 }
 
 .head {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
-  top: 70px;
-  left: 127px;
+  top: 50px;
+  left: calc(100% - 51%);
   border: 5px solid var(--dark);
   background-color: transparent;
 }
 
 .body {
-  height: 75px;
+  height: 70px;
   width: 5px;
-  top: 110px;
-  left: 145px;
+  top: 86px;
+  left: calc(100% - 43%);
 }
 
 .left-arm {
   height: 5px;
   width: 40px;
-  top: 130px;
-  left: 110px;
+  top: 104px;
+  left: calc(100% - 60%);
   transform: rotate(30deg);
 }
 
 .right-arm {
   height: 5px;
   width: 40px;
-  top: 130px;
-  left: 145px;
+  top: 104px;
+  left: calc(100% - 43%);
   transform: rotate(-30deg);
 }
 
 .left-leg {
   height: 5px;
   width: 40px;
-  top: 190px;
-  left: 110px;
+  top: 160px;
+  left: calc(100% - 60%);
   transform: rotate(-30deg);
 }
 
 .right-leg {
   height: 5px;
   width: 40px;
-  top: 190px;
-  left: 145px;
+  top: 160px;
+  left: calc(100% - 43%);
   transform: rotate(30deg);
 }
 
@@ -450,7 +449,7 @@ button:active {
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .key {
@@ -459,8 +458,15 @@ button:active {
     font-size: 0.9rem;
   }
 
+  .game-info {
+    padding: 0.4rem;
+  }
   .word-display {
     font-size: 1.5rem;
     letter-spacing: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  .hangman-drawing {
+    margin-bottom: 1.2rem;
   }
 }
