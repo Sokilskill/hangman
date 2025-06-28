@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Custom Hangman Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 onmousedown="return false">Custom Hangman Game</h1>
+
+      <div class="setup-section">
+        <div class="input-group">
+          <label for="secret-word">Enter your secret word:</label>
+          <input
+            type="text"
+            id="secret-word"
+            placeholder="e.g., 'javascript'"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="word-description">Description or hint (optional):</label>
+          <textarea
+            id="word-description"
+            placeholder="e.g., 'A popular programming language'"
+          ></textarea>
+        </div>
+
+        <div class="flex-center">
+          <button id="start-game">Start Game</button>
+        </div>
+      </div>
+
+      <div class="game-section">
+        <div class="hangman-container">
+          <div class="hangman-drawing">
+            <div class="pole"></div>
+            <div class="gallows"></div>
+            <div class="hangman-part rope pulse"></div>
+            <div class="hangman-part head bounce"></div>
+            <div class="hangman-part body shake"></div>
+            <div class="hangman-part left-arm bounce"></div>
+            <div class="hangman-part right-arm shake"></div>
+            <div class="hangman-part left-leg shake"></div>
+            <div class="hangman-part right-leg bounce"></div>
+          </div>
+
+          <div class="word-description"></div>
+
+          <div class="word-display"></div>
+
+          <div class="flex-center">
+            <button id="show-hint" class="btn-secondary">Show Hint</button>
+
+            <div class="game-info">
+              <div class="info-item">
+                <div class="info-label">Wrong Guesses</div>
+                <div class="info-value" id="wrong-guesses">0/7</div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Letters Left</div>
+                <div class="info-value" id="letters-left">0</div>
+              </div>
+            </div>
+
+            <button id="new-game" class="btn-danger">New Game</button>
+          </div>
+          <div class="keyboard"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <h2 id="modal-title"></h2>
+        <p id="modal-message"></p>
+        <div class="flex-center" id="modal-buttons-container"></div>
+      </div>
+    </div>
+
+    <div id="toastContainer"></div>
+
+    <script type="module" src="/js/index.js"></script>
+  </body>
+</html>
