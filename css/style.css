@@ -30,9 +30,9 @@ body {
 
 .container {
   width: 100%;
-  max-width: 800px;
+  max-width: 50rem;
   background: white;
-  border-radius: 16px;
+  border-radius: 1rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   margin-bottom: 2rem;
@@ -146,7 +146,6 @@ button:active {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 1.5rem;
 }
 
 .hangman-container {
@@ -158,8 +157,8 @@ button:active {
 
 .hangman-drawing {
   position: relative;
-  width: 200px;
-  height: 250px;
+  width: 12.5rem;
+  height: 12.5rem;
   margin-bottom: 1.5rem;
 }
 
@@ -173,85 +172,85 @@ button:active {
 .gallows {
   position: absolute;
 
-  height: 10px;
-  width: 150px;
+  height: 0.625rem;
+  width: 6.25rem;
   background-color: var(--dark);
   top: 0;
-  left: 50px;
+  left: calc(100% - 90%);
 }
 
 .pole {
   position: absolute;
 
-  height: 250px;
-  width: 10px;
+  height: 12.5rem;
+  width: 0.625rem;
   background-color: var(--dark);
   top: 0;
-  left: 50px;
+  left: calc(100% - 90%);
 }
 
 .beam {
-  height: 10px;
-  width: 100px;
+  height: 0.625rem;
+  width: 6.25rem;
   background-color: var(--dark);
   top: 0;
-  left: 60px;
+  left: 3.75rem;
 }
 
 .rope {
-  height: 30px;
-  width: 5px;
+  height: 1.5625rem;
+  width: 0.375rem;
   background-color: var(--dark);
-  top: 30px;
-  left: 145px;
+  top: 1.25rem;
+  left: calc(100% - 44%);
 }
 
 .head {
-  height: 40px;
-  width: 40px;
+  height: 2.1875rem;
+  width: 2.1875rem;
   border-radius: 50%;
-  top: 70px;
-  left: 127px;
+  top: 3.125rem;
+  left: calc(100% - 51%);
   border: 5px solid var(--dark);
   background-color: transparent;
 }
 
 .body {
-  height: 75px;
+  height: 4.375rem;
   width: 5px;
-  top: 110px;
-  left: 145px;
+  top: 5.375rem;
+  left: calc(100% - 43%);
 }
 
 .left-arm {
   height: 5px;
-  width: 40px;
-  top: 130px;
-  left: 110px;
+  width: 2.5rem;
+  top: 6.5rem;
+  left: calc(100% - 60%);
   transform: rotate(30deg);
 }
 
 .right-arm {
   height: 5px;
-  width: 40px;
-  top: 130px;
-  left: 145px;
+  width: 2.5rem;
+  top: 6.5rem;
+  left: calc(100% - 43%);
   transform: rotate(-30deg);
 }
 
 .left-leg {
   height: 5px;
-  width: 40px;
-  top: 190px;
-  left: 110px;
+  width: 2.5rem;
+  top: 10rem;
+  left: calc(100% - 60%);
   transform: rotate(-30deg);
 }
 
 .right-leg {
   height: 5px;
-  width: 40px;
-  top: 190px;
-  left: 145px;
+  width: 2.5rem;
+  top: 10rem;
+  left: calc(100% - 43%);
   transform: rotate(30deg);
 }
 
@@ -270,12 +269,12 @@ button:active {
   justify-content: center;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
-  max-width: 600px;
+  max-width: 37.5rem;
 }
 
 .key {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,7 +313,7 @@ button:active {
   margin-bottom: 1.5rem;
   background-color: #f1f2f6;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .info-item {
@@ -334,7 +333,7 @@ button:active {
 .word-description {
   background-color: #f1f2f6;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
   font-style: italic;
@@ -367,8 +366,8 @@ button:active {
 .modal-content {
   background-color: white;
   padding: 2rem;
-  border-radius: 16px;
-  max-width: 500px;
+  border-radius: 1rem;
+  max-width: 31.25rem;
   width: 90%;
   text-align: center;
   transform: scale(0.9);
@@ -444,23 +443,30 @@ button:active {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
   .container {
     padding: 1rem;
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .key {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     font-size: 0.9rem;
   }
 
+  .game-info {
+    padding: 0.4rem;
+  }
   .word-display {
     font-size: 1.5rem;
     letter-spacing: 0.3rem;
+    margin-bottom: 1rem;
+  }
+  .hangman-drawing {
+    margin-bottom: 1.2rem;
   }
 }
