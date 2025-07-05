@@ -30,9 +30,9 @@ body {
 
 .container {
   width: 100%;
-  max-width: 800px;
+  max-width: 50rem;
   background: white;
-  border-radius: 16px;
+  border-radius: 1rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   margin-bottom: 2rem;
@@ -145,21 +145,21 @@ button:active {
 .flex-center {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .hangman-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .hangman-drawing {
   position: relative;
-  width: 200px;
-  height: 200px;
-  margin-bottom: 24px;
+  width: 12.5rem;
+  height: 12.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .hangman-part {
@@ -172,8 +172,8 @@ button:active {
 .gallows {
   position: absolute;
 
-  height: 10px;
-  width: 100px;
+  height: 0.625rem;
+  width: 6.25rem;
   background-color: var(--dark);
   top: 0;
   left: calc(100% - 90%);
@@ -182,74 +182,74 @@ button:active {
 .pole {
   position: absolute;
 
-  height: 200px;
-  width: 10px;
+  height: 12.5rem;
+  width: 0.625rem;
   background-color: var(--dark);
   top: 0;
   left: calc(100% - 90%);
 }
 
 .beam {
-  height: 10px;
-  width: 100px;
+  height: 0.625rem;
+  width: 6.25rem;
   background-color: var(--dark);
   top: 0;
-  left: 60px;
+  left: 3.75rem;
 }
 
 .rope {
-  height: 25px;
-  width: 6px;
+  height: 1.5625rem;
+  width: 0.375rem;
   background-color: var(--dark);
-  top: 20px;
+  top: 1.25rem;
   left: calc(100% - 44%);
 }
 
 .head {
-  height: 35px;
-  width: 35px;
+  height: 2.1875rem;
+  width: 2.1875rem;
   border-radius: 50%;
-  top: 50px;
+  top: 3.125rem;
   left: calc(100% - 51%);
   border: 5px solid var(--dark);
   background-color: transparent;
 }
 
 .body {
-  height: 70px;
+  height: 4.375rem;
   width: 5px;
-  top: 86px;
+  top: 5.375rem;
   left: calc(100% - 43%);
 }
 
 .left-arm {
   height: 5px;
-  width: 40px;
-  top: 104px;
+  width: 2.5rem;
+  top: 6.5rem;
   left: calc(100% - 60%);
   transform: rotate(30deg);
 }
 
 .right-arm {
   height: 5px;
-  width: 40px;
-  top: 104px;
+  width: 2.5rem;
+  top: 6.5rem;
   left: calc(100% - 43%);
   transform: rotate(-30deg);
 }
 
 .left-leg {
   height: 5px;
-  width: 40px;
-  top: 160px;
+  width: 2.5rem;
+  top: 10rem;
   left: calc(100% - 60%);
   transform: rotate(-30deg);
 }
 
 .right-leg {
   height: 5px;
-  width: 40px;
-  top: 160px;
+  width: 2.5rem;
+  top: 10rem;
   left: calc(100% - 43%);
   transform: rotate(30deg);
 }
@@ -269,12 +269,12 @@ button:active {
   justify-content: center;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
-  max-width: 600px;
+  max-width: 37.5rem;
 }
 
 .key {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,7 +313,7 @@ button:active {
   margin-bottom: 1.5rem;
   background-color: #f1f2f6;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 }
 
 .info-item {
@@ -333,7 +333,7 @@ button:active {
 .word-description {
   background-color: #f1f2f6;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
   font-style: italic;
@@ -366,8 +366,8 @@ button:active {
 .modal-content {
   background-color: white;
   padding: 2rem;
-  border-radius: 16px;
-  max-width: 500px;
+  border-radius: 1rem;
+  max-width: 31.25rem;
   width: 90%;
   text-align: center;
   transform: scale(0.9);
@@ -443,7 +443,7 @@ button:active {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5rem) {
   .container {
     padding: 1rem;
   }
@@ -453,8 +453,8 @@ button:active {
   }
 
   .key {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     font-size: 0.9rem;
   }
 
